@@ -2,11 +2,12 @@
 <br/>
 
 ![npm](https://img.shields.io/npm/v/react-switcher-rc)
+![npm](https://img.shields.io/npm/dm/react-switcher-rc)
 
 # Demo
 <a href="https://codesandbox.io/s/react-switcher-bpgpz">Switcher Component</a>
 
-
+# Features
 - **Draggable** with the mouse or with a touch screen.
 - **Customizable** - Easy to customize size, color and more.
 * Very light weight

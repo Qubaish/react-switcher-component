@@ -4,5 +4,4 @@ demo
 .eslintrc.js
 .gitignore
 dist
-scss-plugin.js
 webpack.config.js
