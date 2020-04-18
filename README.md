@@ -3,6 +3,10 @@
 
 ![npm](https://img.shields.io/npm/v/react-switcher-rc)
 
+# Demo
+<a href="https://codesandbox.io/s/react-switcher-bpgpz">Switcher Component</a>
+
+
 - **Draggable** with the mouse or with a touch screen.
 - **Customizable** - Easy to customize size, color and more.
 * Very light weight
@@ -46,3 +50,27 @@ To set up the project:
 1.  Fork and clone the repository
 2.  `$ npm install`
 3.  `$ npm run start`
+
+# To Do
+
+* Convert it to styled components
+* Test Cases
+* Prelint configurations
+
+## Contributors
+
+<table>
+  <tbody>
+    <tr>
+      <td align="center">
+        <img src="https://avatars3.githubusercontent.com/u/8197706?s=460&u=127cd5b1b7ac60b23c448c23338194a64ead761d&v=4" width="120">
+        <br />
+        <a href="https://github.com/Qubaish">Qubaish<a/>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+## License
+
+MIT

@@ -1,7 +1,7 @@
 src
 demo
 .babelrc
-.eslintrc
+.eslintrc.js
 .gitignore
 dist
 scss-plugin.js

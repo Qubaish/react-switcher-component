@@ -5,7 +5,7 @@ import {
     checkedIcon as defaultCheckedIcon,
     uncheckedIcon as defaultUncheckedIcon
   } from "./icon.js";
-import '../switcher.scss';
+import '../switcher.css';
 
 const blockName = 'custom-switch';
 export default function Switcher({
@@ -30,7 +30,7 @@ export default function Switcher({
                 onChange={onChange}
                 id={id}
             />
-            <div className={sn('animated', `${blockName}__shape`, !handlerIcon && `${blockName}__handler--icon`)}>
+            <div className={sn('animated', `${blockName}__shape`)}>
                 {unCheckedIcon && !checked && (<span className={`${blockName}__icon-text`}>{unCheckedIcon}</span>)}
                 {checkedIcon && checked && (<span className={sn(`${blockName}__icon-text`, `${blockName}__icon-text--checked`)}>{checkedIcon}</span>)}
             </div>

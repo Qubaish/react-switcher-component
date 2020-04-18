@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import ReactDom from 'react-dom';
-import Switcher from '../lib';
+import Switcher from '../src';
 
 function App() {
 

@@ -1,6 +1,6 @@
 {
   "name": "react-switcher-rc",
-  "version": "1.0.8",
+  "version": "1.0.10",
   "description": "React switcher component",
   "main": "lib/index.js",
   "scripts": {
