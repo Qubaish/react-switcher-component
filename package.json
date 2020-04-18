@@ -1,11 +1,11 @@
 {
-  "name": "@qubaish/react-switcher-component",
-  "version": "1.0.4",
+  "name": "react-switcher-rc",
+  "version": "1.0.8",
   "description": "React switcher component",
   "main": "lib/index.js",
   "scripts": {
     "start": "webpack-dev-server",
-    "build": "babel src --out-dir lib",
+    "build": "rimraf lib/ && babel src --out-dir lib",
     "lint": "eslint src/**/*.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -14,7 +14,13 @@
     "url": "git+https://github.com/Qubaish/react-switcher-component.git"
   },
   "keywords": [
-    "react"
+    "switch",
+    "toggle",
+    "toggle-button",
+    "toggle-switch",
+    "checkbox",
+    "react",
+    "react-component"
   ],
   "author": "qubaish",
   "license": "ISC",
@@ -23,24 +29,29 @@
   },
   "homepage": "https://github.com/Qubaish/react-switcher-component#readme",
   "dependencies": {
-    "@babel/cli": "^7.8.4",
-    "@babel/core": "^7.8.4",
-    "@babel/preset-env": "^7.8.4",
-    "@babel/preset-react": "^7.9.4",
-    "@babel/runtime": "^7.9.2",
     "classnames": "2.2.6",
     "prop-types": "15.7.2",
     "react": "^16.13.1",
     "react-dom": "16.12.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
     "@babel/plugin-transform-runtime": "^7.9.0",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/preset-react": "^7.9.4",
     "@babel/register": "^7.9.0",
     "babel-loader": "^8.1.0",
+    "css-loader": "^3.5.2",
     "eslint": "^6.8.0",
     "eslint-plugin-react": "^7.19.0",
     "html-webpack-plugin": "^4.2.0",
+    "node-sass": "^4.13.1",
     "path": "^0.12.7",
+    "rimraf": "^3.0.2",
+    "sass": "^1.26.3",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.1.4",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.10.3"
