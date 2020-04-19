@@ -5,6 +5,7 @@
 ![npm](https://img.shields.io/npm/dm/react-switcher-rc)
 [![Build Status](https://travis-ci.com/Qubaish/react-switcher-component.svg?branch=master)](https://travis-ci.com/Qubaish/react-switcher-component)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/748368e6-84ed-4b1e-87d0-3cc828826b28/deploy-status)](https://app.netlify.com/sites/vibrant-neumann-bebf47/deploys)
+[![gzip size](http://img.badgesize.io/https://unpkg.com/react-switcher-rc/lib/index.js?compression=gzip)](https://unpkg.com/react-switcher-rc/lib/index.js)
 
 # Demo
 <a href="https://codesandbox.io/s/react-switcher-bpgpz">Switcher Component</a>
