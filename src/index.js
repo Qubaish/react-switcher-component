@@ -17,7 +17,8 @@ export default function Switcher({
     unCheckedIcon,
     checkedIcon,
     id,
-    onColor
+    onColor,
+    disabled
 }) {
     const styledColor = onColor ? { background: onColor, border: `1px solid ${onColor}`  } : '';
     const checkedIconWithColor =  checkedIcon ? checkedIcon : defaultCheckedIcon(onColor);
@@ -32,6 +33,7 @@ export default function Switcher({
                 checked={checked}
                 onChange={onChange}
                 id={id}
+                disabled={disabled}
             />
             <div
                 className={sn('animated', `${blockName}__shape`)}
@@ -58,5 +60,5 @@ Switcher.propTypes = {
     checked: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
     checkedIcon: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
     unCheckedIcon: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
-    handlerIcon: PropTypes.bool,
+    disabled: PropTypes.bool,
 };

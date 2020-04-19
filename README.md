@@ -44,6 +44,14 @@ function SwitcherExample() {
 }
 ```
 
+| Props         | Type          | Description  |
+| ------------- |:-------------:| :-----:       |
+| checked       | boolean       | Required. If true, the switch is set to checked. If false, it is not checked.|
+| onChange     | func      |   Required. Invoked when the user clicks or drags the switch. It passed event|
+| disabled | boolean      |    Disabled the component |
+| onColor | String      |    Can be hash or color `#000` or `red` |
+
+
 ## Development
 
 You're welcome to contribute to react-switch. Keep in mind that big changes have to be thoroughly tested on lots of different browsers and devices before they can be merged.

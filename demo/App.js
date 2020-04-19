@@ -1,6 +1,11 @@
 import React, {useState} from 'react';
 import ReactDom from 'react-dom';
-import Switcher from '../src';
+import WithText from './WithText';
+import WithColor from './WithColor';
+import WithDisabled from './WithDisabled';
+import WithIcon from './WithIcon';
+import Simple from './Simple';
+import './index.css';
 
 function App() {
 
@@ -11,11 +16,11 @@ function App() {
 
     return (
         <div>
-            <Switcher 
-                name="my-switcher"
-                onChange={onHandleChange}
-                checked={switcherState}
-            />
+            <Simple />
+            <WithText />
+            <WithColor />
+            <WithDisabled />
+            <WithIcon />
         </div>
     )
 }
