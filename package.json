@@ -5,8 +5,10 @@
   "main": "lib/index.js",
   "scripts": {
     "start": "webpack-dev-server",
-    "build": "rimraf lib/ && babel src --out-dir lib",
+    "build": "rimraf dist/ && webpack --mode=production",
+    "build:package": "rimraf lib/ && babel src --out-dir lib",
     "lint": "eslint src/**/*.js",
+    "prepublish": "npm run build:package",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
