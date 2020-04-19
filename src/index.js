@@ -16,9 +16,12 @@ export default function Switcher({
     ariaLabel,
     unCheckedIcon,
     checkedIcon,
-    handlerIcon,
-    id, 
+    id,
+    onColor
 }) {
+    const styledColor = onColor ? { background: onColor, border: `1px solid ${onColor}`  } : '';
+    const checkedIconWithColor =  checkedIcon ? checkedIcon : defaultCheckedIcon(onColor);
+
     return (
         <div className={sn(blockName, className)}>
             <input
@@ -30,18 +33,20 @@ export default function Switcher({
                 onChange={onChange}
                 id={id}
             />
-            <div className={sn('animated', `${blockName}__shape`)}>
+            <div
+                className={sn('animated', `${blockName}__shape`)}
+                style={checked ? styledColor : {}}
+            >
                 {unCheckedIcon && !checked && (<span className={`${blockName}__icon-text`}>{unCheckedIcon}</span>)}
-                {checkedIcon && checked && (<span className={sn(`${blockName}__icon-text`, `${blockName}__icon-text--checked`)}>{checkedIcon}</span>)}
+                {checked && (<span className={sn(`${blockName}__icon-text`, `${blockName}__icon-text--checked`)}>{checkedIconWithColor}</span>)}
             </div>
         </div>
     );
 }
 
 Switcher.defaultProps = {
-    handlerIcon: true,
-    checkedIcon: defaultCheckedIcon,
     unCheckedIcon: defaultUncheckedIcon,
+    onColor: '#009688',
 };
 
 Switcher.propTypes = {

@@ -14,7 +14,7 @@ export const uncheckedIcon = (
         />
     </svg>
 );
-export const checkedIcon = (
+export const checkedIcon = color => (
     <svg
         height="100%"
         width="100%"
@@ -23,7 +23,7 @@ export const checkedIcon = (
     >
         <path
             d="M11.264 0L5.26 6.004 2.103 2.847 0 4.95l5.26 5.26 8.108-8.107L11.264 0"
-            fill="#15700e"
+            fill={color}
             fillRule="evenodd"
         />
     </svg>
