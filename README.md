@@ -51,6 +51,9 @@ function SwitcherExample() {
 | onChange     | func      |   Required. Invoked when the user clicks or drags the switch. It passed event|
 | disabled | boolean      |    Disabled the component |
 | onColor | String      |    Can be hash or color `#000` or `red` |
+| className | String      |    To override css properties |
+| name | String      |    Attribute Name |
+| ariaLabel | String      |    For accessibility (a11y) users |
 
 
 ## Development
