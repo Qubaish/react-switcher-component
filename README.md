@@ -13,8 +13,9 @@
 # Features
 - **Draggable** with the mouse or with a touch screen.
 - **Customizable** - Easy to customize size, color and more.
-* Very light weight
-* You can overide css properties
+* Very **Light** weight
+* You can **overide** css properties
+* Either you can show **Text** or **Icon**
 
 ## Installation
 
@@ -54,6 +55,8 @@ function SwitcherExample() {
 | className | String      |    To override css properties |
 | name | String      |    Attribute Name |
 | ariaLabel | String      |    For accessibility (a11y) users |
+| checkedIcon | String|Node      |    Either you can pass text or icon(svg) |
+| unCheckedIcon | String|Node      |    Either you can pass text or icon(svg) |
 
 
 ## Development

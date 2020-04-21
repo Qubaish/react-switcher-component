@@ -1,25 +1,8 @@
 import React, { useState, Fragment } from 'react';
+import CodeFormatter from 'rc-code-formatter';
 import { heartIcon } from './heartIcon';
 import Switcher from '../src';
-
-function WithIcon() {
-    const [switcherState, setSwitcherState] = useState(false);
-    const onHandleChange = e => {
-        setSwitcherState(e.target.checked);
-    }
-    return (
-        <Fragment>
-            <h1> Switcher component with Custom Icons</h1>
-            <p>Custom styling required to handle custom icons</p>
-            <Switcher 
-                name="my-switcher"
-                onChange={onHandleChange}
-                checked={switcherState}
-                checkedIcon={heartIcon}
-                unCheckedIcon="Off"
-            />
-            <pre className="pre">
-                {`
+const code =`
 import React, {useState} from 'react';
 import Switch from 'react-switcher-rc';
 
@@ -43,8 +26,27 @@ function Switcher() {
     </svg>}
    unCheckedIcon="Off"
   />
-}`} 
-        </pre>
+}`;
+
+function WithIcon() {
+    const [switcherState, setSwitcherState] = useState(false);
+    const onHandleChange = e => {
+        setSwitcherState(e.target.checked);
+    }
+    return (
+        <Fragment>
+            <h1> Switcher component with Custom Icons</h1>
+            <p>Custom styling required to handle custom icons</p>
+            <Switcher 
+                name="my-switcher"
+                onChange={onHandleChange}
+                checked={switcherState}
+                checkedIcon={heartIcon}
+                unCheckedIcon="Off"
+            />
+            <CodeFormatter theme="light">
+              {code}
+            </CodeFormatter>
     </Fragment>
     )
 }
